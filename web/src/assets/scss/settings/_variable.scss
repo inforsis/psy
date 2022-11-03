@@ -1,0 +1,33 @@
+// ==========================================================================
+//   VARIAVEIS
+//===========================================================================
+// @import "~bootstrap/scss/variables";
+
+// scss-docs-start theme-color-variables
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+
+// 2. Include any default variable overrides here
+$primary: #193443 !default;
+$secundary: #136673 !default;
+$light: #e8ebed;
+$dark: #162f3c !default;
+$highlight: #00f5ff;
+$background: $light;
+$error: #ed2d5c;
+
+//fonts
+$primaryFontRegular: "robotoregular";
+$primaryFontMedium: "robotomedium";
+$primaryFontItalic: "robotoitalic";
+$primaryFontThin: "robotothin";
+$primaryFontLight: "robotolight";
+$primaryFontLight-italic: "robotolight_italic";
+$primaryFontLight-thin-italic: "robotothin_italic";
+$primaryFontBold: "robotobold";

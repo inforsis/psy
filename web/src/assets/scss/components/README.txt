@@ -1,0 +1,16 @@
+COMPONENTS
+
+
+	Camada onde começamos a estilizar os nossos componentes de forma mais específica:
+
+
+
+		Normalmente, aqui ficarão listas específicas como de produtos, cards específicos como aqueles incluindo imagens, etc. 
+
+		É aqui que estilos para uma “lista de produtos” ou “cabeçalho principal” seriam encontrados.
+
+
+
+		aqui vamos sobrepor estilos de elementos de framework, biblioteca e afins utilizados no projeto; (exemplo: bootstrap, jqueryui, pulgins...)
+
+	
