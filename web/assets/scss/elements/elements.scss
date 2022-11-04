@@ -28,6 +28,11 @@ html {
 
 body {
   height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(151, 150, 240),
+    rgb(251, 199, 212)
+  );
   * {
     font-family: $primaryFontRegular;
   }
