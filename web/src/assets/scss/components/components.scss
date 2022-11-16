@@ -1,0 +1,58 @@
+//===========================================================================
+//	COMPONENTS
+//
+//		Camada onde começamos a estilizar os nossos componentes de forma
+//		mais específica:
+//
+//			- Normalmente, aqui ficarão listas específicas como de produtos,
+//			cards específicos como aqueles incluindo imagens, etc.
+//
+//			- É aqui que estilos para uma “lista de produtos” ou
+//			“cabeçalho principal” seriam encontrados.
+//
+//			- aqui vamos sobrepor estilos de elementos de framework,
+//			biblioteca e afins utilizados no projeto;
+//			(exemplo: bootstrap, jqueryui, plugins...)
+//
+//
+//===========================================================================
+@import 'bootstrap';
+@import 'toastify';
+@import 'accordion.scss';
+@import 'form.scss';
+@import 'modal.scss';
+// 5. Add additional custom code here
+
+.avatar {
+  align-items: center;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 2.875rem;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  width: 2.875rem;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.avatar img {
+  border-radius: inherit;
+  width: 100%;
+}
+
+.js-plotly-plot {
+  width: 100%;
+  > .user-select-none {
+    width: 100% !important;
+  }
+  .svg-container {
+    > svg {
+      &:first-of-type {
+        position: relative !important;
+      }
+    }
+  }
+}

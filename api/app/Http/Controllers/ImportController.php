@@ -9,13 +9,22 @@ use App\Models\Report;
 use App\Models\User;
 use App\Models\Quiz;
 use App\Models\Question;
+use Illuminate\Support\Facades\Schema;
 use \stdClass;
 
 class ImportController extends Controller
 {
+
+    public function __construct()
+    {
+        User::query()->delete();
+        Question::query()->delete();
+    }
+
     //
     public function index(Request $request)
     {
+
         $cvs = $request->file('cvs');
         $cvs = $request->cvs->path();
 
@@ -170,5 +179,10 @@ class ImportController extends Controller
                 }
             }
         }
+    }
+
+    public function clear()
+    {
+        dd('clear base!');
     }
 }

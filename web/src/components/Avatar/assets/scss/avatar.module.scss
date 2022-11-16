@@ -1,0 +1,15 @@
+@import '../../../../assets/scss/settings/settings.scss';
+@import '../../../../assets/scss/tools/tools.scss';
+
+.avatar {
+  background-color: #28b867;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 100%;
+  justify-content: center;
+  // margin-bottom: 1rem;
+  align-items: center;
+}

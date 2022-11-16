@@ -1,0 +1,72 @@
+//===========================================================================
+//	Accordion
+//  Estilização do componente de accordion
+//
+//===========================================================================
+
+.accordion {
+  width: 100%;
+  > .accordion-item {
+    background: transparent;
+    border: none;
+    margin-bottom: 30px;
+    > .accordion-header {
+      &[disabled] {
+        pointer-events: none;
+        .accordion-button {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      > .accordion-button {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        color: $secundary;
+        font-size: 18px;
+        font-family: $primaryFontBold;
+        padding: 0 0 10px;
+        position: relative;
+        &:before {
+          content: '';
+          width: 100%;
+          border-bottom: 2px solid $secundary;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+    .accordion-collapse {
+      > .accordion-body {
+        padding: 0;
+        > .accordion {
+          width: 100%;
+          > .accordion-item {
+            background: transparent;
+            border: none;
+            margin-bottom: 2px;
+            > .accordion-header {
+              > .accordion-button {
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                background: #a3aeb4;
+                color: $dark;
+                font-size: 18px;
+                font-family: $primaryFontBold;
+                height: 40px;
+                padding: 15px;
+                position: relative;
+                &:before {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

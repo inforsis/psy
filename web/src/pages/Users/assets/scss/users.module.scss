@@ -1,0 +1,13 @@
+@import '../../../../assets/scss/settings/settings.scss';
+@import '../../../../assets/scss/tools/tools.scss';
+
+.contentAvatar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  > div {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+  }
+}

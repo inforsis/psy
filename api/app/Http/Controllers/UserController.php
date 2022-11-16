@@ -10,12 +10,12 @@ use App\Http\Controllers\ReportController;
 class UserController extends Controller
 {
     //
-    public function index($id = null)
+    static function index($id = null)
     {
         if (!$id)
             $data = User::all();
         else
-            $data = User::find($id);
+            $data = [User::find($id)];
 
         return $data;
     }

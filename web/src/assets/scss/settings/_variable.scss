@@ -1,0 +1,52 @@
+// ==========================================================================
+//   VARIAVEIS
+//===========================================================================
+// @import "~bootstrap/scss/variables";
+
+// scss-docs-start theme-color-variables
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+
+// 2. Include any default variable overrides here
+$primary: #fff !default;
+$secundary: #dfe9f3 !default;
+$light: #e8ebed;
+$dark: #000 !default;
+$highlight: #28304e;
+$background: $light;
+$error: #d75a4a;
+
+//MODAL
+$modalBackground: #dfe9f3;
+
+//ERROR
+$backgroundError: #fbbbca;
+$borderColorError: $error;
+$borderWidthError: 2px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1601px,
+);
+
+@import '~bootstrap/scss/variables';
+
+//fonts
+$primaryFontRegular: 'robotoregular';
+$primaryFontMedium: 'robotomedium';
+$primaryFontItalic: 'robotoitalic';
+$primaryFontThin: 'robotothin';
+$primaryFontLight: 'robotolight';
+$primaryFontLight-italic: 'robotolight_italic';
+$primaryFontLight-thin-italic: 'robotothin_italic';
+$primaryFontBold: 'robotobold';

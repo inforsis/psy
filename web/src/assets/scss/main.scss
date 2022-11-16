@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* ==========================================================================
+@LAMCSO/COPPE/UFRJ
+@Code by Jadson Moreira (B2G4 - jadson@lamcso.coppe.ufrj.br)
+@Description: Folha de Estilo principal [INTEGRIDUTOS]
+@version: 0.0.1
+@since: august/2022
+========================================================================== */
+
+//===========================================================================
+//	TOOLS
+//	- Camada com mixins, funcoes, placeholders, etc.
+//===========================================================================
+@import 'tools/tools';
+
+//===========================================================================
+//	SETTINGS
+//	- Camada onde declaramos as configurações do nosso projeto, como
+//    variáveis de medidas, cores, etc.
+//===========================================================================
+@import 'settings/settings';
+
+//===========================================================================
+//	GENERIC
+//	- Camada com propriedades mais genericas e com a menor especificidade
+//	  possivel. Normalmente usado para quando queremos usar o seletor *
+//===========================================================================
+@import 'generic/generic';
+
+//===========================================================================
+//	ELEMENTS/BASE
+//	- Essa camada serve para estilizarmos a parte mais basica dos
+//    componentes. Nada de IDs nem classes aqui, apenas seletores
+//    de elementos.
+//===========================================================================
+@import 'elements/elements';
+
+//===========================================================================
+//	HELPERS
+//	- Camadas com seletores que trazem estilos que devem ganhar de todos os
+//	  outros.
+//===========================================================================
+@import 'helpers/helpers';
+
+//===========================================================================
+//	COMPONENTS
+//	- Estilização de componentes de terceiros
+//===========================================================================
+@import 'components/components';
+
+//===========================================================================
+//	FONTS
+//	- https://dev.subweb.com.br/uikit/?path=/story/introdu%C3%A7%C3%A3o-guia-de-estilos-typography--page
+//===========================================================================
+@import '../fonts/roboto/stylesheet.css';

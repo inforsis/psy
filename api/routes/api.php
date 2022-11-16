@@ -10,6 +10,7 @@ use App\Http\Controllers\QuizController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ImportController;
 use App\Http\Controllers\AnswerController;
+use App\Http\Controllers\DiarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,3 +71,6 @@ Route::get('/answer/{id?}', [AnswerController::class, 'index']);
 Route::post('/answer/create', [AnswerController::class, 'create']);
 Route::put('/answer/update/{id}', [AnswerController::class, 'update']);
 Route::delete('/answer/delete/{id}', [AnswerController::class, 'delete']);
+
+//DIARIO
+Route::get('/diario/{id?}', [DiarioController::class, 'index']);

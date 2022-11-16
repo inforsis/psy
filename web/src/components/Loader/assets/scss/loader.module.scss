@@ -1,0 +1,45 @@
+@import '../../../../assets/scss/settings/settings.scss';
+@import '../../../../assets/scss/tools/tools.scss';
+
+.mainLoadingContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+  height: 100%;
+  &[data-show='true'] {
+    display: flex;
+  }
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+  }
+  > .loadingIco {
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  &:after {
+    content: attr(data-message);
+    display: block;
+    font-size: 10px;
+    color: $secundary;
+    text-transform: uppercase;
+    z-index: 1;
+    letter-spacing: 2px;
+    font-family: $primaryFontLight;
+    background-color: rgba(232, 235, 237, 0.8);
+    padding: 0 5px;
+    border-radius: 0;
+  }
+}

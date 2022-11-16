@@ -8,7 +8,7 @@ use App\Models\Report;
 class ReportController extends Controller
 {
     //
-    public function index($id = null)
+    static function index($id = null)
     {
         if (!$id)
             $data = Report::all();

@@ -1,0 +1,53 @@
+@import '../../../../assets/scss/settings/settings.scss';
+@import '../../../../assets/scss/tools/tools.scss';
+
+#header {
+  // background-color: $primary;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  color: $primary;
+  flex-direction: column;
+  padding: 2rem 2rem 0;
+  justify-content: flex-end;
+  height: 100%;
+}
+.title {
+  font-size: 1.640625rem;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-size: 0.8375rem;
+}
+.dropdown {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  > .dropdown {
+    display: none;
+  }
+}
+
+.form {
+  display: inline-block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  label {
+    position: absolute;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    > svg {
+      margin-right: 0.5rem;
+    }
+  }
+}
