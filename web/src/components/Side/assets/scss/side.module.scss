@@ -6,6 +6,7 @@
   width: 300px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
   &[data-expand-mode='true'] {
     width: 80px;
   }
@@ -19,17 +20,23 @@
   img {
     margin-right: 1rem;
   }
-  > span {
-    color: $primary;
-    letter-spacing: 3px;
-    color: #ebba16;
-    &:before {
-      content: 'P';
-      color: #43b05c;
-    }
-    &:after {
-      content: 'y';
-      color: #d75a4a;
+  > div {
+    padding: 5px 10px;
+    background-color: $highlight;
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    border-radius: 10px;
+    > span {
+      color: $primary;
+      letter-spacing: 3px;
+      color: #ebba16;
+      &:before {
+        content: 'P';
+        color: #43b05c;
+      }
+      &:after {
+        content: 'y';
+        color: #d75a4a;
+      }
     }
   }
 }
@@ -59,9 +66,11 @@
     font-size: 12px;
     font-weight: normal;
     letter-spacing: 1px;
+    margin-bottom: 5px;
   }
   > address {
     font-size: 10px;
+    font-weight: bold;
   }
 }
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\QuizController;
-use App\Models\Report;
+use App\Models\Archive;
 use App\Models\User;
 use App\Models\Quiz;
 use App\Models\Question;
@@ -144,11 +144,11 @@ class ImportController extends Controller
 
                 //QUIZ
                 $user_id = User::where('user_login', $arrUsers[$z]->Username)->get()[0]->ID;
-                $report_id = Report::where('user_id', $user_id)->get()[0]->ID;
+                $archive_id = Archive::where('user_id', $user_id)->get()[0]->ID;
                 $quiz['timestamp'] = $arrUsers[$z]->data[$c]->{'Timestamp'};
                 $quiz['date'] = $arrUsers[$z]->data[$c]->{'Data Hoje'};
 
-                $quiz['report_id'] = $report_id;
+                $quiz['archive_id'] = $archive_id;
                 $quiz['answers'] = $arrUsers[$z]->data[$c];
                 array_push($objQuiz, $quiz);
             }
@@ -160,8 +160,8 @@ class ImportController extends Controller
         // dd($objQuiz);
         foreach ($quiz as $index => $item) {
             $quiz_id = $item->ID;
-            // dd($item->report_id);
-            if ($objQuiz[$index]['report_id'] === $item->report_id) {
+            // dd($item->archive_id);
+            if ($objQuiz[$index]['archive_id'] === $item->archive_id) {
                 $arrAnswer = [];
                 foreach ($objQuiz[$index]['answers'] as $key => $answer) {
                     $question = Question::where('question', $key)->get();

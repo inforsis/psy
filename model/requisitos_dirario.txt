@@ -1,0 +1,36 @@
+Juntar por período
+(diário, que é um semanal, mas ela insiste em chamar de diário)
+07 dias;
+
+usuário -> N relatórios (que ela chama de diários)
+relatório -> 7 Questionários
+
+isso é uma semanal, que é chamado de dirário (de forma inventada!)
+1,2,3,...7
+
+
+20/01/2022 - +6 (7)
+
+
+
+
+20/01/2022 - 05/02/2022
+7x
+(diário)
+
+
+6 (questionários)
+
+
+
+Diário
+ID
+user_id
+aliase (um apelido para o diário)
+updated_at
+created_at
+
+
+
+
+

@@ -24,11 +24,14 @@ import { useWeb } from '../../contexts';
 import Avatar from '../../components/Avatar';
 
 export default function Dashboard(props) {
-  const { setSectionTitle } = useWeb();
-  const { title } = props;
+  const { setSectionTitle, setBgColor } = useWeb();
+  const { title, bgColor } = props;
   useEffect(() => {
     setSectionTitle(title);
   }, [setSectionTitle, title]);
+  useEffect(() => {
+    setBgColor(bgColor);
+  }, [setBgColor, bgColor]);
   const navigate = useNavigate();
   const trace1 = {
     x: [
@@ -55,7 +58,7 @@ export default function Dashboard(props) {
 
   return (
     <Container fluid className="p-0">
-      <Row className="g-6 mb-5">
+      <Row id={styles.header} className="g-6 mb-5">
         <Col xl="2">
           <Card>
             <CardBody>
@@ -160,7 +163,8 @@ export default function Dashboard(props) {
               <Table striped className={styles.table}>
                 <thead>
                   <tr>
-                    <th>Paciente</th>
+                    <th>&nbsp;</th>
+                    <th>Nome</th>
                     <th>Data</th>
                     <th>&nbsp;</th>
                   </tr>
@@ -168,10 +172,12 @@ export default function Dashboard(props) {
                 <tbody>
                   <tr>
                     <td>
+                      <div>
+                        <Avatar userName="Jadson Moreira" />
+                      </div>
+                    </td>
+                    <td>
                       <div className="d-flex align-items-center">
-                        <div className="me-3">
-                          <Avatar userName="Jadson Moreira" />
-                        </div>
                         Jadson Moreira
                       </div>
                     </td>
@@ -195,7 +201,7 @@ export default function Dashboard(props) {
                           outline
                           title="Visualizar diário"
                           onClick={() => {
-                            navigate('/diario/1');
+                            navigate('/perfil/1/diario/1');
                           }}
                         >
                           <MdOpenInNew />

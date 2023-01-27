@@ -2,6 +2,22 @@ https://clever-dashboard.webpixels.work/pages/user/profile.html
 https://spark.bootlab.io/dashboard-default.html
 https://clever-dashboard.webpixels.work/pages/projects/grid-view.html#
 https://themes.getbootstrap.com/preview/?theme_id=105870
+https://spark.bootlab.io/dashboard-analytics.html
+
+
+View Diários
+Filtro:
+Período
+Usuário
+Busca
+
+Ordenar
+(Nome, Data)
+
+Agrupar
+por usuário
+por período
+
 
 
 

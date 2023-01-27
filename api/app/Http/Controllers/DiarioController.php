@@ -14,11 +14,11 @@ class DiarioController extends Controller
         $data = (new UserController)->index($id);
         foreach ($data as $index => $user) {
             $quiz = (new QuizController)->index($user->ID);
-            $user['report'] = $quiz;
+            $user['archive'] = $quiz;
 
             foreach ($quiz as $i => $item) {
                 // $answer = (new AnswerController)->index($item->ID);
-                // $user['report'][$i]['quiz'] = $answer;
+                // $user['archive'][$i]['quiz'] = $answer;
 
                 $answer = DB::table('quizzes')
                     ->where('quizzes.ID', '=', $item->ID)
@@ -35,7 +35,7 @@ class DiarioController extends Controller
                         'answers.updated_at as answers_updated_at'
                     )
                     ->get();
-                $user['report'][$i]['quiz'] = $answer;
+                $user['archive'][$i]['quiz'] = $answer;
             }
         }
         return $data;

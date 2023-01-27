@@ -7,7 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\QuizController;
-use App\Http\Controllers\ReportController;
+use App\Http\Controllers\ArchiveController;
 use App\Http\Controllers\ImportController;
 use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\DiarioController;
@@ -60,11 +60,11 @@ Route::post('/quiz/create', [QuizController::class, 'create']);
 Route::put('/quiz/update/{id}', [QuizController::class, 'update']);
 Route::delete('/quiz/delete/{id}', [QuizController::class, 'delete']);
 
-// REPORT
-Route::get('/report/{id?}', [ReportController::class, 'index']);
-Route::post('/report/create', [ReportController::class, 'create']);
-Route::put('/report/update/{id}', [ReportController::class, 'update']);
-Route::delete('/report/delete/{id}', [ReportController::class, 'delete']);
+// ARCHIVE
+Route::get('/archive/{id?}', [ArchiveController::class, 'index']);
+Route::post('/archive/create', [ArchiveController::class, 'create']);
+Route::put('/archive/update/{id}', [ArchiveController::class, 'update']);
+Route::delete('/archive/delete/{id}', [ArchiveController::class, 'delete']);
 
 // ANSWER
 Route::get('/answer/{id?}', [AnswerController::class, 'index']);

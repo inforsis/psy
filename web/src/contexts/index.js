@@ -16,6 +16,7 @@ const WebContext = createContext();
 function WebProvider({ children }) {
   const [loader, setLoader] = useState({});
   const [sectionTitle, setSectionTitle] = useState();
+  const [bgColor, setBgColor] = useState();
   // const navigate = useNavigate();
 
   const toggleLoader = useCallback(
@@ -76,6 +77,8 @@ function WebProvider({ children }) {
         toggleModalConfirm,
         sectionTitle,
         setSectionTitle,
+        bgColor,
+        setBgColor,
       }}
     >
       {children}

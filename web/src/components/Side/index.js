@@ -23,22 +23,18 @@ export default function Side() {
       // }}
     >
       <div className={styles.header}>
-        <img src={Logo} alt="Logo" />
-        <span>s</span>
+        <div>
+          <img src={Logo} alt="Logo" />
+          <span>s</span>
+        </div>
       </div>
       <div className={styles.content}>
         <div className={styles.contentAvatar}>
           <Avatar userName="Jadson Moreira" />
           <div className="my-2" />
           <h6>Jadson Moreira</h6>
-          <small>
-            {/* <MdMail /> */}
-            inforsis@gmail.com
-          </small>
-          <address>
-            {/* <MdLocationOn /> */}
-            Aracaju, SE - Brazil
-          </address>
+          <small>inforsis@gmail.com</small>
+          <address>ADMIN</address>
         </div>
         <nav className={styles.menu}>
           <Link to="/" className="item" title="Dashboard">
@@ -57,7 +53,11 @@ export default function Side() {
             <GiNotebook />
             Diários
           </Link>
-          <Link to="/configuracao/1" className="item" title="Configuração">
+          <Link
+            to="perfil/1/configuracao/"
+            className="item"
+            title="Configuração"
+          >
             <IoMdSettings />
             Configuração
           </Link>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Quiz;
-use App\Models\Report;
+use App\Models\Archive;
 
 class QuizController extends Controller
 {
@@ -14,8 +14,8 @@ class QuizController extends Controller
         if (!$user_id)
             $data = Quiz::all();
         else {
-            $report_id = Report::where('user_id', $user_id)->get()[0]->ID;
-            $data = Quiz::where('report_id', $report_id)->get();
+            $archive_id = Archive::where('user_id', $user_id)->get()[0]->ID;
+            $data = Quiz::where('archive_id', $archive_id)->get();
         }
 
         return $data;

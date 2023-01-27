@@ -28,14 +28,6 @@
 @import 'generic/generic';
 
 //===========================================================================
-//	ELEMENTS/BASE
-//	- Essa camada serve para estilizarmos a parte mais basica dos
-//    componentes. Nada de IDs nem classes aqui, apenas seletores
-//    de elementos.
-//===========================================================================
-@import 'elements/elements';
-
-//===========================================================================
 //	HELPERS
 //	- Camadas com seletores que trazem estilos que devem ganhar de todos os
 //	  outros.
@@ -47,6 +39,14 @@
 //	- Estilização de componentes de terceiros
 //===========================================================================
 @import 'components/components';
+
+//===========================================================================
+//	ELEMENTS/BASE
+//	- Essa camada serve para estilizarmos a parte mais basica dos
+//    componentes. Nada de IDs nem classes aqui, apenas seletores
+//    de elementos.
+//===========================================================================
+@import 'elements/elements';
 
 //===========================================================================
 //	FONTS

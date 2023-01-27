@@ -4,7 +4,7 @@ import styles from './assets/scss/avatar.module.scss';
 
 export default function Avatar(props) {
   const { userName } = props;
-  const [bgColor, setBgColor] = useState();
+  const [avatarColor, setAvatarColor] = useState();
   const [name, setName] = useState();
   useEffect(() => {
     function stringToColor() {
@@ -24,7 +24,7 @@ export default function Avatar(props) {
       }
       /* eslint-enable no-bitwise */
 
-      setBgColor(color);
+      setAvatarColor(color);
     }
 
     function stringAvatar() {
@@ -37,7 +37,7 @@ export default function Avatar(props) {
     stringToColor();
   }, [userName]);
   return (
-    <div className={styles.avatar} style={{ backgroundColor: bgColor }}>
+    <div className={styles.avatar} style={{ backgroundColor: avatarColor }}>
       {name}
     </div>
   );

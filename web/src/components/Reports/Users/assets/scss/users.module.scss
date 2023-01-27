@@ -1,0 +1,19 @@
+@import '../../../../../assets/scss/settings/settings.scss';
+@import '../../../../../assets/scss/tools/tools.scss';
+
+.name {
+  > button {
+    font-size: 20px !important;
+    color: $dark !important;
+    &:after {
+      color: $dark !important;
+    }
+  }
+}
+
+.table {
+  th,
+  td {
+    vertical-align: middle;
+  }
+}

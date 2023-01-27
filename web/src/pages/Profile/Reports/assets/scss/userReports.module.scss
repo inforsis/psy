@@ -1,0 +1,28 @@
+@import '../../../../../assets/scss/settings/settings.scss';
+@import '../../../../../assets/scss/tools/tools.scss';
+
+.year {
+  > button {
+    font-size: 22px !important;
+    color: $dark !important;
+    &:after {
+      color: $dark !important;
+    }
+  }
+}
+.month {
+  > button {
+    font-size: 20px !important;
+    color: $dark !important;
+    &:after {
+      color: $dark !important;
+    }
+  }
+}
+
+.table {
+  th,
+  td {
+    vertical-align: middle;
+  }
+}
